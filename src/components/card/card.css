@@ -7,8 +7,8 @@
     height: 260px;
     width: 190px;
 
-    display: grid;
-    grid-template-columns: 2fr 2fr;
+
+ 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,4 +44,49 @@
 .desc>span{
     font-size: 14px;
     color: rgb(162, 148, 148);
+ }
+ .consult{
+    margin-top: 5rem;
+ }
+ .topdesc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .topdescright>button{
+    padding: 10px;
+    border: 1px solid rgb(148, 148, 209);
+    color: rgb(100, 131, 190);
+ }
+ .dowdesc_card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid; */
+    width: 125px;
+    gap: 5px;
+
+ }
+ .dowdesc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 20px;
+
+ }
+ .dowdesc_card>img{
+    height: 125px;
+    object-fit: cover;
+ }
+ .para2{
+    padding: 2px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+ }
+ .para3{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(127, 124, 205);
  }

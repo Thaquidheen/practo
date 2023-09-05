@@ -64,7 +64,55 @@ const Card = () => {
                    
                 </div>
             </div>
-       
+         
+
+         <div className="consult">
+          <div className="topdesc">
+            <div className="topdescleft">
+              <h1>Consult top doctors online for any health concern</h1>
+              <span>Private online consultations with verified doctors in all specialists</span>
+            </div>
+            <div className="topdescright">
+              <button>View all specialities</button>
+            </div>
+          </div>
+          <div className="dowdesc">
+            <div className="dowdesc_card">
+              <img src="https://www.practostatic.com/consult/consult-home/symptoms_icon/irregular-painful+period.png" alt="" />
+              <span className='para2'>period doubts or Pregnancy</span>
+              <span className='para3'>Consult Now</span>
+            </div>
+
+
+            <div className="dowdesc_card">
+              <img src="https://www.practostatic.com/consult/consult-home/symptoms_icon/Acne.png" alt="" />
+              <span className='para2'>period doubts or Pregnancy</span>
+              <span className='para3'>Consult Now</span>
+            </div>
+            <div className="dowdesc_card">
+              <img src="https://www.practo.com/consult/static/images/top-speciality-sexology.svg" alt="" />
+              <span className='para2'>period doubts or Pregnancy</span>
+              <span className='para3'>Consult Now</span>
+            </div>
+
+            <div className="dowdesc_card">
+              <img src="https://www.practostatic.com/consult/consult-home/symptoms_icon/coughing.png" alt="" />
+              <span className='para2'>period doubts or Pregnancy</span>
+              <span className='para3'>Consult Now</span>
+            </div>
+            <div className="dowdesc_card">
+              <img src="https://www.practo.com/consult/static/images/top-speciality-pediatric.svg" alt="" />
+              <span className='para2'>period doubts or Pregnancy</span>
+              <span className='para3'>Consult Now</span>
+            </div>
+
+            <div className="dowdesc_card">
+              <img src="https://www.practostatic.com/acred/search-assets/2/12-mental-wellness.png" alt="" />
+              <span className='para2'>period doubts or Pregnancy</span>
+              <span className='para3'>Consult Now</span>
+            </div>
+          </div>
+         </div>
     </div>
 </div>
 

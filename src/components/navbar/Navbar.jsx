@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
    <div className="navbar">
         <CssBaseline />
-     <div className="navbar_wrapper">
+     <div className="container">
         <div className="left">
         <div className="logo">.practo.</div>
         <ul className='ulnav'>
@@ -72,7 +72,7 @@ const Navbar = () => {
   
     </Dropdown>
             </div>
-       <button className='btn'>login/signup</button>
+       <button className='btn1'>login/signup</button>
         </div>
         
      </div>
