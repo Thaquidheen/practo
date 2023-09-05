@@ -1,0 +1,77 @@
+.header{
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+.wrapper_header{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputs{
+    display: flex;
+}
+
+.border1{
+ border: 1px solid grey;
+ display: flex;
+ align-items: center;
+}
+.inputstyle{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 225px;
+}
+.inputstyle2{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    width:400px;
+}
+.adbox{
+    display: flex;
+    align-items: center;
+    padding: 1px 5px;
+    background-color: rgb(215, 199, 215);
+    width: 200px;
+    height: 45px;
+    gap: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.adleft{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.adright{
+    display: flex;
+    align-items: center;
+    
+}
+.box{
+    background-color: rgb(149, 56, 172);
+    color: white;
+    font-size: 10px;
+    padding: 1px;
+    border-radius: 2px;
+}
+.para{
+    font-size: 10px;
+}
+.para1{
+    font-size: 12px;
+    font-weight: bold;
+}
+.adicon{
+    font-size: 35px;
+    color: rgb(149, 56, 172);
+}
