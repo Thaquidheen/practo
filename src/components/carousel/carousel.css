@@ -1,0 +1,12 @@
+.par{
+    font-size: 20px;
+
+    color: black !important;
+}
+.big{
+    font-weight: bold;
+    color: rgb(42, 38, 38);
+}
+.car_container{
+    height: 30vh;
+}

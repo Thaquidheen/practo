@@ -1,0 +1,59 @@
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.adleft{
+ display: flex;
+ flex-direction: column;
+align-items: flex-start;
+width: 325px;
+padding: 30px 0px;
+margin-right:-85px ;
+
+
+}
+.adleft>button{
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(115, 144, 207);
+}
+.adleft>h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+.adleft>span{
+    font-size: 14px;
+}
+.adright{
+display: flex;
+
+
+gap: 20px;
+}
+.first>img{
+
+  
+    object-fit: cover;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    width: 285px;
+    gap: 10px;
+
+}
+.adrighthead{
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+}
+.adrightheadpara{
+    font-size: 12px;
+}
+.line {
+    width: 100%; /* Adjust the width as needed */
+    height: 1px; /* Adjust the height as needed */
+    background-color: #000; /* Adjust the color as needed */
+  }

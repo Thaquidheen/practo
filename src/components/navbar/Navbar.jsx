@@ -9,17 +9,25 @@ import { IoIosArrowDown } from 'react-icons/io';
 const Navbar = () => {
   return (
    <div className="navbar">
+    <img className='sticky-image' src="https://www.practostatic.com/scripts/images/img_app_download_bottom_sticky.png" alt="" />
         <CssBaseline />
-     <div className="container">
+     <div className="container navbar_container">
         <div className="left">
-        <div className="logo">.practo.</div>
-        <ul className='ulnav'>
+        <div className="logo">
+          .practo.
+        </div>
+        {/* <ul className='ulnav'>
             <li className='navItems'>Find Doctors</li>
             <li className='navItems'>Video Consult</li>
             <li className='navItems'>Medicines</li>
             <li className='navItems'>Lab Tests</li>
             <li className='navItems'>Surgeries</li>
-        </ul>
+        </ul> */}
+        <span className='navItems'>Find Doctors</span>
+        <span className='navItems'>Video Consult</span>
+        <span className='navItems'>medicines</span>
+        <span className='navItems'>Lab tests</span>
+        <span className='navItems'>Surgeries</span>
         </div>
         <div className="right">
             <div>

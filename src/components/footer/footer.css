@@ -1,0 +1,37 @@
+ .footer{
+    background-color: rgb(36, 55, 203);
+    color: white;
+    padding: 0 0 5rem 0;
+ }
+ .footerItems{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+ }
+ .footerlist{
+    text-decoration: none;
+ }
+ .footerItem{
+    display: flex;
+    justify-content: space-around;
+ }
+ .footerItems>span{
+     cursor: pointer;
+     font-size: 12px;
+ }
+  .footerItems>span:hover{
+     text-decoration: underline;
+     color: white;
+ }
+ .footer_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+ }
+ .downfooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
+ }

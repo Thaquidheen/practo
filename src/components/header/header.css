@@ -1,10 +1,9 @@
 .header{
-
-
   display: flex;
   align-items: center;
   justify-content: center;
   height: 10vh;
+  position: relative;
 }
 .wrapper_header{
  
@@ -47,7 +46,7 @@
     cursor: pointer;
 
 }
-.adleft{
+.adleft1{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -74,4 +73,7 @@
 .adicon{
     font-size: 35px;
     color: rgb(149, 56, 172);
+}
+.downborder{
+    margin-left: 305px;
 }

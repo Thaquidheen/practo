@@ -1,9 +1,55 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './card.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import List from '../list/List';
+import {BsArrowLeftCircle, BsArrowRightCircle} from 'react-icons/bs'
 
 
 const Card = () => {
+  const [isMoved, setIsMoved] = useState(false);
+  const [slideNumber, setSlideNumber] = useState(0);
+  const listRef = useRef();
+  const cardWidth = 280; // Adjust this to match the width of your cards
+  let totalSlides = 5;
+
+  useEffect(() => {
+    const container = listRef.current;
+    totalSlides = Math.ceil(container.scrollWidth / cardWidth);
+  }, []);
+
+  // const handleClick = (direction) => {
+  //   setIsMoved(true);
+  //   const container = listRef.current;
+    
+  //   if (direction === 'left' && slideNumber > 0) {
+  //     setSlideNumber(slideNumber - 1);
+  //     const newTranslate = slideNumber * cardWidth - cardWidth;
+  //     container.style.transform = `translateX(-${newTranslate}px)`;
+  //   }
+
+  //   if (direction === 'right' && slideNumber < 2.5) { // Assuming you have 3.5 slides
+  //     setSlideNumber(slideNumber + 1);
+  //     const newTranslate = slideNumber * cardWidth + cardWidth;
+  //     container.style.transform = `translateX(-${newTranslate}px)`;
+  //   }
+  // };
+  const handleClick = (direction) => {
+    setIsMoved(true);
+    const container = listRef.current;
+
+    if (direction === 'left' && slideNumber > 0) {
+      setSlideNumber(slideNumber - 1);
+      const newTranslate = (slideNumber - 1) * cardWidth;
+      container.style.transform = `translateX(-${newTranslate}px)`;
+    }
+
+    if (direction === 'right' && slideNumber < totalSlides - 1) {
+      setSlideNumber(slideNumber + 1);
+      const newTranslate = (slideNumber + 1) * cardWidth;
+      container.style.transform = `translateX(-${newTranslate}px)`;
+    }
+  };
+
   return (
     <div className="card_container">
     <div className="container">
@@ -113,6 +159,35 @@ const Card = () => {
             </div>
           </div>
          </div>
+ 
+        <div className="book">
+          <h3>Book an appointment for an in-clinic consultation</h3>
+         <span>Find experienced doctors across all specialties</span>
+        
+        <div className="list">
+       <div className="wrapper">
+       <BsArrowLeftCircle  
+        className="sliderArrow left" onClick={()=>handleClick("left")}
+        style={{ display: !isMoved && "none" }}
+       />
+       <div className="container1" ref={listRef}>
+          <List/>
+         
+
+
+         
+       </div>
+       <BsArrowRightCircle  
+        className="sliderArrow right"onClick={()=>handleClick("right")}
+
+       />
+         
+       </div>
+       
+
+        </div>
+        </div>
+
     </div>
 </div>
 

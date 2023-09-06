@@ -1,0 +1,42 @@
+.listContainer{
+    margin-top: 20px;
+    left: 0;
+    display: flex;
+    margin-bottom: 25px;
+
+}
+
+
+.listItems{
+
+    height: 225px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.picsec{
+flex: 3;
+}
+.picsecimg{
+ object-fit: cover;
+  width: 250px;
+}
+.lsdesc{
+ display: flex;
+ flex-direction: column;
+}
+.para4{
+    font-size: 12px;
+}
+.isdeschead{
+    font-weight: bold;
+    color: rgb(64, 87, 87);
+    cursor: pointer;
+}
+.isdeschead:hover{
+
+    color: rgb(31, 120, 184);
+    
+}

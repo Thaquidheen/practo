@@ -6,7 +6,19 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-.navbar_wrapper{
+.navbar_container{
+ display: flex;
+ align-items: center;
+
+}
+.sticky-image {
+  height: 125px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 999; /* Adjust the z-index as needed */
+}
+/* .navbar_wrapper{
   
     width: 100%;
   max-width: 1255px;
@@ -15,7 +27,7 @@ justify-content: center;
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
+} */
 .left{
     display: flex;
     align-items: center;
@@ -37,11 +49,11 @@ justify-content: center;
 }
 .navItems{
    
-    padding: 10px 10px;
+    padding: 10px 5px;
     color: #000000;
     text-decoration: none;
     cursor: pointer;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 700;
 }
 .right{

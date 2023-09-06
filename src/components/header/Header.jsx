@@ -15,11 +15,15 @@ const Header = () => {
             <div className="border1">
             <input type="text" placeholder='Search doctors,clinics,hospitals etc..' className='inputstyle2'/>
             </div>
+            
         </div>
+   
+        
     </div>
+    
     <div className="right_header">
         <div className="adbox">
-            <div className="adleft">
+            <div className="adleft1">
                 <span className='para1'>Try</span>
                 <span className="box">PLUS</span>
             </div>
